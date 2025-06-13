@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HiBro - Like J.A.R.V.I.S</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="scanline"></div>
+
+            <div class="container">
+                <header class="header">
+                    <div class="title">HiBro - like J.A.R.V.I.S</div>
+                    <div class="timezone-display">
+                        <label for="timezone-select">Select your timezone:</label>
+                        <select id="timezone-select"></select>
+                        <p>Current Time: <span id="current-time" class="data-text">--:--:--</span></p>
+                    </div>
+                </header>
+
+                <div class="sidebar-left">
+                    <div class="module active-tasks-module">
+                        <h2>FUTURE UPDATES </h2>
+                        <p>HiBro --- made by Fiel</p>
+                        <ul>
+                            <li>Update: more widgets...</li>
+                            <li>Update: make security system...</li>
+                            <li>Update: custom command options...</li>
+                            <li>Update: make HiBro text to speech...</li>
+                        </ul>
+                    </div>
+
+                    <div class="module quick-actions-module">
+                        <h2>QUICK ACTIONS</h2>
+                        <button class="action-button" data-href="https://www.youtube.com/">Open YouTube</button>
+                        <button class="action-button" data-href="https://whatismyipaddress.com/">Check my IP</button>
+                        <button id="erase-commands-button" class="action-button">Erase Previous Commands</button>
+                    </div>
+                </div>
+
+                <main class="main-content">
+                    <div class="orb">
+                        <div class="orb-text">HB</div>
+                    </div>
+                    <p class="greeting">What's up, Bro? System's ready to roll.</p>
+
+                    <pre id="command-output" class="command-output">HiBro OS v3.1.0 Initializing...
+    System checks complete. All systems nominal. Type /help for command list.</pre>
+
+                    <div class="command-input-wrapper">
+                        <input type="text" id="command-input" class="command-input" placeholder="Type /help for commands...">
+                        <div id="command-suggestions" class="command-suggestions-popup"></div>
+                    </div>
+                    <p class="enter-command-prompt">Waiting for command...</p>
+                </main>
+
+                <div class="sidebar-right">
+                    <div class="module music-panel">
+                        <h2>BG MUSIC</h2>
+                        <audio id="city-sound" src="city-sound.mp3" preload="auto"></audio>
+                        <audio id="rain-sound" src="rain-sound.mp3" preload="auto"></audio>
+                        <audio id="fireplace-sound" src="fireplace-sound.mp3" preload="auto"></audio>
+
+                        <div class="music-controls">
+                            <button id="play-music-button">Play</button>
+                            <button id="pause-music-button">Pause</button>
+                            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                            <span id="current-playing-song">None</span>
+                        </div>
+
+                        <div class="sound-selection">
+                            <button class="sound-button" data-sound="city-sound">City</button>
+                            <button class="sound-button" data-sound="rain-sound">Rain</button>
+                            <button class="sound-button" data-sound="fireplace-sound">Fireplace</button>
+                        </div>
+                    </div>
+
+                    <div class="module jokes-panel">
+                        <h2>JOKES BY HIBRO</h2>
+                        <p id="joke-output">Loading joke...</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+            <div class="widget-dashboard">
+                <h2>INTEGRATED WIDGETS</h2>
+                <div class="widgets-grid">
+                    <div class="widget-box">
+                        <img src="gmail-logo.png" alt="Gmail" class="widget-logo"> <h3>Gmail</h3>
+                        <p>Access your email, compose messages, and manage your inbox.</p>
+                        <a href="https://mail.google.com/" target="_blank" class="widget-link">OPEN GMAIL</a>
+                    </div>
+
+                    <div class="widget-box">
+                        <img src="notebooklm-logo.png" alt="Notebook LM" class="widget-logo"> <h3>Notebook LM</h3>
+                        <p>Manage your notebooks and AI overviews.</p>
+                        <a href="https://notebooklm.google.com/" class="widget-link">LAUNCH NBLM</a>
+                    </div>
+
+                    <div class="widget-box">
+                        <img src="google-docs-logo.png" alt="Google Docs" class="widget-logo"> <h3>Google Docs</h3>
+                        <p>Create and edit documents online, collaborate in real-time.</p>
+                        <a href="https://docs.google.com/" target="_blank" class="widget-link">OPEN DOCS</a>
+                    </div>
+
+                    <div class="widget-box">
+                        <img src="google-gemini-logo.png" alt="Gemini" class="widget-logo"> <h3>Gemini AI</h3>
+                        <p>Leverage advanced AI for creative and intelligent assistance.</p>
+                        <a href="https://gemini.google.com/" target="_blank" class="widget-link">ASK GEMINI</a>
+                    </div>
+
+                    <div class="widget-box" id="stock-widget">
+                        <img src="stocks-logo.png" alt="Stocks" class="widget-logo">
+                        <h3>Stock Market</h3>
+                        <p id="stock-info">Type /stocks [symbol] for data.</p>
+                        <a href="https://www.google.com/finance" target="_blank" class="widget-link">VIEW ON GOOGLE FINANCE</a>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </html>
