@@ -1,5 +1,6 @@
 Copyright
-©️2025,HiBro the personal AI just like J.A.R.V.I.S, Fiel(f13llat941@gmail.com)
+©️2025,HiBro the personal AI just like J.A.R.V.I.S, created by f21-droid
+with the help of Google Gemini and Visual Studio Code.
 
 HiBro 🤖 (just like J.A.R.V.I.S) ---> made by Fiel🍏
 - used Google Gemini 💻
