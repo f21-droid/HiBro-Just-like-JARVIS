@@ -2,11 +2,11 @@ Copyright
 ©️2025,HiBro the personal AI just like J.A.R.V.I.S, created by f21-droid
 with the help of Google Gemini and Visual Studio Code.
 
-HiBro 🤖 (just like J.A.R.V.I.S) ---> made by Fiel🍏
+HiBro 🤖 (just like J.A.R.V.I.S) ---> made by Field/f21-droid🍏
 - used Google Gemini 💻
 - used VS CODE 💻
 - images/logos from vector icons/flaticon.com 🖼️
-- sound is used is non copyrighted.🔊
+- sound used is non-copyrighted.🔊
 
 You can use my code to make your own websites/ai/robots, etc or even test it out... But:
 
